@@ -1,0 +1,18 @@
+<div class="wrap">
+  <h1 class="register-title">Log In</h1>
+  <form class="register" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <input
+      type="email"
+      formControlName="email"
+      class="register-input"
+      placeholder="Email address"
+    />
+    <input
+      type="password"
+      formControlName="password"
+      class="register-input"
+      placeholder="Password"
+    />
+    <input type="submit" value="Login" class="register-button" />
+  </form>
+</div>
